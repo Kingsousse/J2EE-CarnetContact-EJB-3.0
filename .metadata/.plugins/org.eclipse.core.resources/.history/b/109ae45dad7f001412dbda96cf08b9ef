@@ -1,0 +1,16 @@
+package sessionBeans;
+
+import javax.ejb.Stateless;
+
+
+@Stateless(mappedName="ContactBean")
+public class GestionContactBean implements GestionContactRemote {
+
+	
+	
+	public String coucouContact(String nomContact) {
+		
+		return "coucou"+nomContact;
+	}
+
+}
